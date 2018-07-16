@@ -1,0 +1,11 @@
+image: openjdk:latest
+
+stages:
+  - build
+  - test
+  - run
+  
+build:
+  stage: build
+  script:
+    - mvn clean install
